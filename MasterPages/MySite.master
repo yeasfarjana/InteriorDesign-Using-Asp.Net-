@@ -1,0 +1,176 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MySite.master.cs" Inherits="MasterPages_MySite" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Interior Design</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Theme/StyleSheet/FrontPage.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+    <div>
+        <div id="backg">
+          <img style="width:100%; height:1800px;" src="../Theme/Images/bg.jpg"/>
+        </div>         
+
+        
+         <div id="bnr">
+        <img style="height:744px;width:1170px;"  src="../Theme/Images/bannar.jpg" />
+        <div class="image1">
+            <img style="height:201px;width:370px;" src="../Theme/Images/bk7.jpg" />
+                <div class="text1" style="font-family:'Lucida Calligraphy';font-size:small;">
+                <h1>Who We Are!!!</h1>
+                <p>
+                    Our site design and navigation has been<br /> 
+                    thoroughly hought out.It will tell you <br />
+                    lots of interesting things bout our <br />
+                    company,it's priduct nd service ,highly <br />
+                    rofession staff and happy customers.
+                </p>
+            </div>
+        </div>
+        <div  class="image3">
+            <img style="height:201px;width:370px;" src="../Theme/Images/bk6.jpg" />
+            <div class="text3" style="font-family:'Algerian';font-size:small;">
+                <h1>WELCOME TO OUR SITE</h1>
+                <p style="font-size:small;">
+                    We Offer Modern TurnKey Interior Solution <br />
+                    To Realize Any Of Your Whimsical Ideas <br />
+                    For Your Comfort Living..We Are Always <br />
+                    Happy To Greet The New Visitors On Our Site.
+                </p>
+            </div>
+        </div>
+        <div class="image2">
+            <img style="height:201px;width:370px;" src="../Theme/Images/bk7.jpg" />
+            <div class="text2" style="font-family:'Lucida Calligraphy';font-size:small;">
+                <h1>Why We Are!!!</h1>
+                <p>
+                    With advanced features of activating account <br />
+                    and new widgets, you will definitely have a great <br />
+                    experience of using our webpage. The layout is <br />
+                    aesthetically appealing, contains concise text <br />
+                    in order not to take your precious time.
+                </p>
+            </div>
+        </div>
+        <div>
+            <font color="Ghostwhite"style="font-family:Algerian;font-size:25px;"><marquee behavior="alternate" style="border:Darkblue 3px solid;width:1165px;">25% off for Eid Occation</marquee></font>
+        </div>
+        <div id="LvrmImg">
+            <a href="../Service.aspx">
+            <img src="../Theme/Images/LvrmImg11.png" />
+            <font id="mrq1" color="Ghostwhite"style="font-family:Algerian;font-size:15px;"><marquee behavior="alternate"  style="border:Darkblue 3px solid;width:150px;">Click Here</marquee></font> 
+            </a>
+        </div>
+        <div id="BdrmImg">
+            <a href="../Service.aspx">
+            <img src="../Theme/Images/BdrmImg2.png" />
+            <font id="mrq2" color="Ghostwhite" style="font-family:Algerian;font-size:15px;"><marquee behavior="alternate" style="border:Darkblue 3px solid;width:150px;">Click Here</marquee></font>
+            </a>
+        </div>
+        <div id="ClrmImg">
+            <a href="../Service.aspx">
+            <img src="../Theme/Images/CldrmImg11.png" />
+            <font id="mrq3" color="Ghostwhite" style="font-family:Algerian;font-size:15px;"><marquee behavior="alternate" style="border:Darkblue 3px solid;width:150px;">Click Here</marquee></font>
+            </a>
+        </div>
+        <div id="KtrmImg">
+            <a href="../Service.aspx">
+            <img src="../Theme/Images/KtrmImg11.png" />
+            <font id="mrq4" color="Ghostwhite" style="font-family:Algerian;font-size:15px;"><marquee behavior="alternate" style="border:Darkblue 3px solid;width:150px;">Click Here</marquee></font>
+            </a>
+        </div>
+        <div id="footer">
+            <h3>CONTACT US</h3>
+            <h4>Farjana Rahaman</h4>
+            <h5>farjana.phy@gmail.com</h5>
+            <h4>CellPhone: 01737 093417</h4>
+        </div>
+            <div id="footer1">
+                <h3>GALLERY</h3>
+                <ul>
+                    <li><a href="#">Office</a></li>
+                    <li><a href="#">Restrutant</a></li>
+                    <li><a href="#">Wash Room</a></li>
+                </ul>
+                <aside class="sidemenu">
+                    <ul>
+                        <li><a href="#">Bed Room</a></li>
+                        <li><a href="#">Living Room</a></li>
+                        <li><a href="#">Kitchen</a></li>
+                    </ul>
+                </aside>
+            </div>
+        <div id="footer2">
+            <h3>FOLLOW US</h3>
+            <img src="../Theme/Images/snImg1.png" />
+            <img src="../Theme/Images/snImg2.png" />
+            <img src="../Theme/Images/snImg3.png" />
+            <img src="../Theme/Images/snImg4.png" />
+            <img src="../Theme/Images/Untitled-14.png" />
+            <p>Copyrigh &copy; 2017 Farshi Ltd.</p>
+        </div>
+        
+    </div>
+
+        <nav id="container">            
+        <div id="icon">
+            <img src="../Theme/Images/Untitled-2.png" />
+        </div>
+        <div id="title">
+            <h1 style="font-family:Papyrus; font-size:30px;font-weight:bold;">FARSHI &nbsp; INTERIOR</h1>
+            <h2 style="font-family:Papyrus;font-size:20px;">Belief Brings Success</h2>
+        </div>
+            <div>
+                <asp:LoginName ID="LoginName1" runat="server" FormatString="Logged in as {0}" />
+                    <asp:LoginView ID="LoginView1" runat="server">
+                    <LoggedInTemplate>
+                    (<asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/Login.aspx" />)
+                    </LoggedInTemplate>
+                        <RoleGroups>
+                            <asp:RoleGroup Roles="Admin">
+                                <ContentTemplate>
+                                    (<asp:HyperLink ID="HyperLink1" runat="server"
+                                    NavigateUrl="~/ManageSite/InputService.aspx">Manage Site</asp:HyperLink> or
+                                    <asp:LoginStatus ID="LoginStatus2" runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/Login.aspx"/>)
+                                </ContentTemplate>
+                            </asp:RoleGroup>
+                        </RoleGroups>
+                    </asp:LoginView>
+            </div>
+        <div id="nav">
+            <ul>
+                <li><a href="Default.aspx">HOME</a></li>
+                <li><a href="Service.aspx">SERVICE</a></li>
+                <li><a href="Cataloge.html">CATALOGE</a></li>               
+                <li><a href="AboutUs.html">ABOUT US</a></li>
+                <li><a href="Login.aspx">Admin Panel</a></li>
+            </ul>
+        </div>   
+        </nav>
+
+        <section>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </section>
+
+        <aside>
+
+        </aside>
+
+<%--        <footer>
+            <h3>FOLLOW US</h3>
+
+            <p>Copyrigh &copy; 2017 Farshi Ltd.</p>
+        </footer>--%>
+        
+    </div>
+    </form>
+</body>
+</html>

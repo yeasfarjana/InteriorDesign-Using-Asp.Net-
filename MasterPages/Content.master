@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Content.master.cs" Inherits="MasterPages_Content" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Theme/StyleSheet/FrontPage.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header>
+        <nav id="container" style="top:0;">            
+        <div id="icon">
+            <img src="../Theme/Images/Untitled-2.png" />
+        </div>
+        <div id="title">
+            <h1 style="font-family:Papyrus; font-size:30px;font-weight:bold;">FARSHI &nbsp; INTERIOR</h1>
+            <h2 style="font-family:Papyrus;font-size:20px;">Belief Brings Success</h2>
+        </div>
+             <div>
+                <asp:LoginName ID="LoginName1" runat="server" FormatString="Logged in as {0}" />
+                    <asp:LoginView ID="LoginView1" runat="server">
+                    <LoggedInTemplate>
+                    (<asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/Login.aspx" />)
+                    </LoggedInTemplate>
+                        <RoleGroups>
+                            <asp:RoleGroup Roles="Admin">
+                                <ContentTemplate>
+                                    (<asp:HyperLink ID="HyperLink1" runat="server"
+                                    NavigateUrl="~/InputService.aspx">Manage Site</asp:HyperLink> or
+                                    <asp:LoginStatus ID="LoginStatus2" runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/Login.aspx"/>)
+                                </ContentTemplate>
+                            </asp:RoleGroup>
+                        </RoleGroups>
+                    </asp:LoginView>
+            </div>
+        <div id="nav">
+            <ul>
+                <li><a href="../Default.aspx">HOME</a></li>
+                <li><a href="../Service.aspx">SERVICE</a></li>
+                <li><a href="../Cataloge.html">CATALOGE</a></li>               
+                <li><a href="../AboutUs.html">ABOUT US</a></li>
+                <li><a href="../Login.aspx">Admin Panel</a></li>
+            </ul>
+        </div>   
+        </nav>
+    </header>
+
+        <section>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </section>
+
+        <footer>
+            
+        </footer>
+        
+    
+    </form>
+</body>
+</html>
